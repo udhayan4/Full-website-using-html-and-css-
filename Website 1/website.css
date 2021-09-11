@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+p {
+    font-weight: 300;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url("vegatable.jpg");
+    background-size: cover;
+}
+
+.banner .content {
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .content h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: chartreuse
+}
+
+.banner .content p {
+    font-size: 30px;
+    padding: 30px;
+    color: chocolate;
+}
+
+body {
+    min-height: 1000px;
+}
+
+.btn {
+    font-size: larger;
+    color: black;
+    background-color: deeppink;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    letter-spacing: 2px;
+    transition: 0.9s;
+    margin: 100px;
+}
+
+.btn:hover {
+    background-color: yellow;
+    color: red;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1000;
+    transition: 0.5s;
+    justify-content: space-between;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+}
+
+header h3 {
+    color: red;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 40px;
+    align-items: left;
+    justify-content: left;
+    float: left;
+}
+
+header .nav {
+    position: relative;
+    display: flex;
+}
+
+header .nav li {
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+}
+
+header .nav li a {
+    text-decoration: none;
+    justify-content: right;
+    margin: 20px;
+    align-items: right;
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+    justify-content: space-between;
+}
+
+header .nav li a:hover {
+    color: burlywood;
+    border-bottom: 3px solid chartreuse;
+}
+
+section {
+    padding: 100px;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+}
+
+.text {
+    color: orangered;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.text span {
+    color: black;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+p {
+    color: black;
+    font-size: 30px;
+}
+
+img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 50%;
+    height: 500px;
+}
+
+.menu .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid white;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu .content .box .img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.menu .content .box .img img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.menu .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.menu .content .box .text h3 {
+    font-weight: 400;
+    color: darkorange;
+}
+
+.expect .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+}
+
+.expect .content .box {
+    width: 250px;
+    margin: 15px;
+}
+
+.expect .content .box .img {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.expect .content .box .img img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.expect .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.expect .content .box .text h3 {
+    font-weight: 500;
+    color: darkviolet;
+}
+
+.form {
+    padding: 75px 50px;
+    background: url('login.jpg');
+    background-size: cover;
+    background-color: white;
+    align-items: right;
+    justify-content: right;
+    width: 100%;
+    height: 600px;
+    min-height: 50px;
+    min-width: 500px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.form h3 {
+    color: chartreuse;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form .input {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form .input input {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    width: 300px;
+    font-size: 17px;
+}
+
+.form .input textarea {
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.form .input [type="submit"] {
+    font-size: 20px;
+    display: inline-block;
+    color: fuchsia;
+    background-color: #555;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+}
+
+.form .input [type="submit"]:hover {
+    background-color: purple;
+    color: white;
+}
+
+.copyright {
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
+}
+
+.copyright p {
+    color: brown;
+}
